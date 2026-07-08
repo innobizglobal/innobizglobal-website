@@ -1,26 +1,31 @@
 # Innobiz Global Ventures Website
 
-Premium Next.js website inspired by the high-end digital engineering style of Appinventiv, adapted as an original Innobiz Global corporate website.
+Premium Next.js corporate website for Innobiz Global Ventures.
 
-## What is included
+## Version
 
-- Next.js + TypeScript project
-- Premium dark gradient theme
-- Animated hero section
-- Animated service cards
-- Realistic remote image URLs instead of placeholders
-- Industries, solutions, process, impact, showcase, and contact sections
-- Responsive mobile layout
-- Static enquiry form UI ready to connect to backend/email/CRM
+v1.1 — service detail pages, SEO metadata, reusable components, improved contact enquiry flow, realistic imagery, and additional trust/process sections.
 
-## Run locally
+## Tech stack
+
+- Next.js 14
+- React 18
+- TypeScript
+- CSS animations
+- Hostinger Web Apps / Node.js deployment ready
+
+## Local setup
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open `http://localhost:3000`.
+Open:
+
+```text
+http://localhost:3000
+```
 
 ## Production build
 
@@ -29,16 +34,29 @@ npm run build
 npm run start
 ```
 
-## Notes before going live
+## Hostinger deployment settings
 
-1. Replace the temporary text logo with the final Innobiz Global logo.
-2. Replace stock image URLs with licensed images purchased/generated for Innobiz Global.
-3. Connect the contact form to email, CRM, WhatsApp, or backend API.
-4. Add SEO pages if required: About, Services, Industries, Case Studies, Blog, Contact.
-5. Add legal pages: Privacy Policy, Terms, and Cookie Policy.
+```text
+Framework preset: Next.js
+Branch: main
+Node version: 22.x
+Root directory: ./
+Build and output settings: Default for Next.js
+Environment variables: None for this version
+```
 
-## Suggested domain deployment options
+## GitHub update workflow
 
-- Vercel for easiest Next.js deployment.
-- VPS/Node hosting if deploying with `npm run start`.
-- Static export can be prepared separately if the final site is mostly static.
+After replacing files locally:
+
+```bash
+git add .
+git commit -m "Innobiz website v1.1 updates"
+git push
+```
+
+Hostinger should redeploy automatically after the push, or you can trigger redeploy manually from hPanel.
+
+## Contact form note
+
+The contact form opens the visitor's email application with enquiry details addressed to `hello@innobizglobal.com`. For direct server-side email delivery, add SMTP credentials later and replace the mailto flow with an API route.
