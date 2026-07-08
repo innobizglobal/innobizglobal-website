@@ -1,33 +1,26 @@
-# Innobiz Global Website v1.5
+# Innobiz Global Website v1.6 – Logo & Brand Color Alignment
 
-Premium AI hero refinement update.
+This update aligns the website with the uploaded Innobiz Global Ventures logo.
 
-## What changed
+## Included
 
-- Drastically reduced hero banner title size to match a premium enterprise reference style.
-- Fixed overcrowding in the hero section and improved spacing between title, paragraph, CTA, trust strip, and logos.
-- Added interactive hero functionality:
-  - Auto-rotating hero messages.
-  - Clickable capability switcher: AI Automation, Product Engineering, CRM Operations, Growth Systems.
-  - Hero title, paragraph, CTA label, metric card, and background glow change based on selected capability.
-- Added secondary CTA: Explore services.
-- Added floating metric card on desktop.
-- Improved responsive mobile hero sizing.
-- Build tested successfully with `npm run build`.
+- Actual Innobiz Global Ventures logo asset added under `public/images/`.
+- New transparent header logo generated from the uploaded logo.
+- Header and footer updated to use the logo.
+- Brand palette updated around deep blue, electric blue, warm orange, and dark navy.
+- Hero, CTA buttons, cards, hover effects, trust strip, and footer accents now follow the logo colors.
+- v1.5 interactive hero functionality is preserved.
 
-## Update steps
+## Deploy
 
-Copy these files into your existing local project folder and replace files when asked.
-
-Then run:
+Copy the contents into the existing project folder, then run:
 
 ```bash
-cd "/c/Users/ramar/Downloads/innobizglobal-next-website-v1/innobizglobal-next"
 npm install
 npm run build
 git add .
-git commit -m "Innobiz v1.5 hero size and functionality update"
+git commit -m "Innobiz v1.6 logo and brand color alignment"
 git push
 ```
 
-Hostinger should redeploy automatically. If not, open Hostinger Web Apps and click Redeploy.
+If Hostinger does not redeploy automatically, click Redeploy from the Web Apps deployment screen.
