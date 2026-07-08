@@ -1,26 +1,36 @@
-# Innobiz Global Website v1.8 - White Theme Conversion
+# Innobiz Global Website v1.9 - Uploaded Banner Images Update
 
-This package converts the Innobiz Global website from a dark premium theme into a white, clean, corporate technology theme aligned with the Innobiz Global Ventures logo.
+This update uses the four uploaded clean banner images as the homepage hero carousel backgrounds.
 
 ## Changes
 
-- Converted the overall website to a white/light theme.
-- Added a new light AI/network hero background SVG.
-- Kept the Innobiz logo and blue/orange brand palette.
-- Updated header, mega menu, hero, service cards, inner pages, contact form, and footer for light mode.
-- Preserved the interactive hero switcher and individual menu pages from v1.7.
-- Avoided the emergency inline CSS approach that previously caused deployment trouble.
+- Added four real banner background images under `public/images/banners/`.
+- Updated homepage hero to rotate across four banner concepts:
+  - AI Business Assistants
+  - Workflow Automation
+  - Product Engineering
+  - Growth & Analytics
+- Removed the client/trust logo strip from the banner.
+- Added cleaner interactive banner controls.
+- Improved the navigation dropdown arrow placement using inline chevrons.
+- Kept the white theme and Innobiz blue/orange brand color system.
 
-## Deploy
+## Update steps
 
-Copy these files into your existing local project folder, replacing old files, then run:
+1. Unzip this package.
+2. Copy all files into your local project folder:
+   `C:\Users\ramar\Downloads\innobizglobal-next-website-v1\innobizglobal-next`
+3. Replace existing files when prompted.
+4. Run:
 
 ```bash
+cd "/c/Users/ramar/Downloads/innobizglobal-next-website-v1/innobizglobal-next"
 npm install
 npm run build
 git add .
-git commit -m "Innobiz v1.8 white theme conversion"
+git commit -m "Innobiz v1.9 use uploaded banner images"
 git push
 ```
 
-Then redeploy/clear cache in Hostinger.
+5. Redeploy in Hostinger if automatic deployment does not start.
+6. Clear Hostinger cache and browser cache.
