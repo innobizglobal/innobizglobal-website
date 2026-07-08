@@ -1,40 +1,30 @@
-# Innobiz Global Website v1.3
+# Innobiz Global Website v1.4
 
-Premium enterprise homepage update for Innobiz Global.
+Premium enterprise hero implementation for Innobiz Global.
 
-## v1.3 Highlights
+## v1.4 changes
 
-- Appinventiv-style premium dark top navigation structure.
-- Menu order refined to: InnobizAI, About, Services, Industries, Portfolio, Resources, Explore Innobiz Digital, Contact Us.
-- Full-width cinematic animated hero banner.
-- Circuit-board/AI background with layered dark overlay, glowing motion lines, particle dots, and moving grid.
-- Large centered headline and CTA similar to premium enterprise tech landing pages.
-- Trust/capability strip below the hero.
-- Existing service pages, portfolio, resources, contact form, and content preserved.
+- Implemented Appinventiv-style premium dark navbar structure for Innobiz Global.
+- Added original Innobiz Global logo mark and wordmark styling.
+- Added full-width cinematic AI/circuit-board hero background as a local SVG asset.
+- Added centered headline: `AI, Digital & Automation Services`.
+- Added CTA button: `Consult Our Experts`.
+- Added trust strip with generic placeholder wordmarks: NovaTech, Prime Retail, Axis Foods, CloudMint, BluePeak, UrbanGrid.
+- Added animated light beams, glow pulses, data spikes, circuit dots, and grid motion.
+- Build tested successfully using `npm run build`.
 
-## Run locally
+## Local update steps
+
+Copy these files into your existing local project folder and replace existing files.
+
+Then run:
 
 ```bash
 npm install
-npm run dev
-```
-
-Open `http://localhost:3000`.
-
-## Production build
-
-```bash
 npm run build
-```
-
-## Deploy update
-
-Copy these files into the existing local GitHub project folder, then run:
-
-```bash
 git add .
-git commit -m "Innobiz v1.3 premium enterprise hero update"
+git commit -m "Implement v1.4 premium AI hero"
 git push
 ```
 
-Hostinger Web Apps should redeploy from GitHub automatically. If not, click Redeploy in Hostinger.
+After GitHub push, redeploy from Hostinger if automatic deployment does not start.

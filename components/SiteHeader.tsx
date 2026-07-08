@@ -14,9 +14,9 @@ const menuGroups = [
       {
         title: 'Use Cases',
         links: [
-          ['Sales Drafting', '/#solutions'],
-          ['Customer Support Summaries', '/#solutions'],
           ['Lead Qualification', '/#solutions'],
+          ['Customer Support Intelligence', '/#solutions'],
+          ['Email & WhatsApp Automation', '/#solutions'],
         ],
       },
     ],
@@ -127,15 +127,18 @@ const menuGroups = [
 
 export function SiteHeader() {
   return (
-    <header className="site-header premium-header">
-      <a className="brand premium-brand" href="/#top" aria-label="Innobiz Global home">
-        <span className="brand-mark premium-brand-mark">I</span>
-        <span>
-          <strong>innobizglobal</strong>
+    <header className="site-header premium-header v14-header">
+      <a className="brand premium-brand v14-brand" href="/#top" aria-label="Innobiz Global home">
+        <span className="brand-mark premium-brand-mark v14-brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" focusable="false">
+            <path d="M32 4 56 18v28L32 60 8 46V18L32 4Z" fill="none" stroke="currentColor" strokeWidth="6" strokeLinejoin="round" />
+            <path d="M32 4v22M56 18 36 30M8 18l20 12M28 34 8 46M36 34l20 12M32 60V38" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity=".9" />
+          </svg>
         </span>
+        <span className="brand-wordmark"><strong>innobiz</strong><em>global</em></span>
       </a>
 
-      <nav className="desktop-nav premium-nav" aria-label="Main navigation">
+      <nav className="desktop-nav premium-nav v14-nav" aria-label="Main navigation">
         {menuGroups.map((group) => (
           <div className="nav-item" key={group.label}>
             <a className="nav-link" href={group.href}>{group.label}</a>
@@ -161,7 +164,7 @@ export function SiteHeader() {
         <a className="nav-link no-chevron explore-link" href="/#solutions">Explore Innobiz Digital</a>
       </nav>
 
-      <a className="header-cta premium-cta" href="/#contact">☎ Contact Us</a>
+      <a className="header-cta premium-cta v14-header-cta" href="/#contact"><span>→</span> Contact Us</a>
     </header>
   );
 }
