@@ -18,67 +18,38 @@ export default function Home() {
     <main>
       <SiteHeader />
 
-      <section id="top" className="hero app-style-hero section-pad">
-        <div className="hero-grid">
-          <div className="hero-copy reveal">
-            <p className="kicker">Digital Engineering • AI Automation • Business Transformation</p>
-            <h1>Engineering digital growth engines for ambitious businesses.</h1>
-            <p className="hero-text">
-              Innobiz Global Ventures helps companies design, build, automate, and scale modern digital platforms — from premium websites and portals to CRM workflows, AI assistants, analytics, and business operations.
-            </p>
-            <div className="hero-actions">
-              <a className="btn btn-primary" href="#contact">Consult Our Experts</a>
-              <a className="btn btn-ghost" href="#services">View Services</a>
-            </div>
-            <div className="trust-strip" aria-label="Capability highlights">
-              <span>Product Engineering</span>
-              <span>AI Automation</span>
-              <span>CRM / ERP</span>
-              <span>Cloud Ready</span>
-            </div>
+      <section id="top" className="enterprise-hero">
+        <div className="enterprise-bg" aria-hidden="true">
+          <span className="light-streak streak-one" />
+          <span className="light-streak streak-two" />
+          <span className="light-streak streak-three" />
+          <span className="circuit-dot dot-one" />
+          <span className="circuit-dot dot-two" />
+          <span className="circuit-dot dot-three" />
+        </div>
+        <div className="enterprise-hero-content reveal">
+          <p className="kicker">AI • Digital Engineering • Business Transformation</p>
+          <h1>AI, Digital & Business Transformation Services</h1>
+          <p className="hero-text hero-centered-text">
+            Innobiz Global helps ambitious businesses design scalable websites, applications, automation systems, CRM workflows, and digital growth engines that create measurable business impact.
+          </p>
+          <div className="hero-actions hero-actions-center">
+            <a className="btn hero-white-cta" href="#contact">Consult Our Experts</a>
           </div>
-
-          <div className="banner-stage reveal delay-1" aria-label="Animated Innobiz capability banner">
-            <div className="banner-grid-bg" />
-            <div className="banner-orb orb-a" />
-            <div className="banner-orb orb-b" />
-            <article className="banner-panel panel-one">
-              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=85" alt="Digital product engineering team planning a platform" />
-              <div className="banner-panel-copy">
-                <span>01 / Product Engineering</span>
-                <strong>Premium web platforms built around business outcomes.</strong>
-              </div>
-            </article>
-            <article className="banner-panel panel-two">
-              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85" alt="AI automation and analytics visualization" />
-              <div className="banner-panel-copy">
-                <span>02 / AI & Automation</span>
-                <strong>AI workflows that help teams move faster every day.</strong>
-              </div>
-            </article>
-            <article className="banner-panel panel-three">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=85" alt="Business analytics dashboard on a screen" />
-              <div className="banner-panel-copy">
-                <span>03 / CRM & Analytics</span>
-                <strong>Dashboards, pipelines, reports, and action visibility.</strong>
-              </div>
-            </article>
-            <article className="banner-panel panel-four">
-              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85" alt="Business team discussing digital transformation" />
-              <div className="banner-panel-copy">
-                <span>04 / Transformation</span>
-                <strong>Strategy, systems, operations, and scalable growth.</strong>
-              </div>
-            </article>
-            <div className="banner-metric metric-one">
-              <strong>360°</strong>
-              <span>Digital business systems</span>
-            </div>
-            <div className="banner-metric metric-two">
-              <strong>AI+</strong>
-              <span>Automation ready</span>
-            </div>
-            <div className="banner-progress" aria-hidden="true"><span /></div>
+        </div>
+        <div className="enterprise-trust reveal delay-1" aria-label="Innobiz trusted capability strip">
+          <div className="trust-title">
+            <span />
+            <strong>TRUSTED FOR PRACTICAL DIGITAL EXECUTION ACROSS GROWING BUSINESSES</strong>
+            <span />
+          </div>
+          <div className="trust-logo-row">
+            <span>AI Automation</span>
+            <span>Web Platforms</span>
+            <span>CRM Systems</span>
+            <span>Commerce Ops</span>
+            <span>Analytics</span>
+            <span>Cloud Ready</span>
           </div>
         </div>
       </section>

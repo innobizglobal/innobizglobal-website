@@ -1,14 +1,58 @@
 const menuGroups = [
   {
+    label: 'InnobizAI',
+    href: '/#ai-solutions',
+    columns: [
+      {
+        title: 'AI Solutions',
+        links: [
+          ['AI Business Assistants', '/services/ai-automation-solutions'],
+          ['Workflow Automation', '/services/ai-automation-solutions'],
+          ['AI Outreach Systems', '/#portfolio'],
+        ],
+      },
+      {
+        title: 'Use Cases',
+        links: [
+          ['Sales Drafting', '/#solutions'],
+          ['Customer Support Summaries', '/#solutions'],
+          ['Lead Qualification', '/#solutions'],
+        ],
+      },
+    ],
+  },
+  {
+    label: 'About',
+    href: '/#company',
+    columns: [
+      {
+        title: 'Company',
+        links: [
+          ['About Innobiz', '/#company'],
+          ['How We Work', '/#process'],
+          ['Why Innobiz', '/#why-innobiz'],
+        ],
+      },
+      {
+        title: 'Approach',
+        links: [
+          ['Consulting First', '/#company'],
+          ['Build to Scale', '/#process'],
+          ['Launch & Improve', '/#process'],
+        ],
+      },
+    ],
+  },
+  {
     label: 'Services',
     href: '/#services',
     columns: [
       {
-        title: 'Consulting & Strategy',
+        title: 'Strategy & Transformation',
         links: [
           ['Digital Transformation', '/services/digital-transformation-consulting'],
           ['Business Consulting', '/services/digital-transformation-consulting'],
-          ['AI Automation', '/services/ai-automation-solutions'],
+          ['Growth Roadmaps', '/services/growth-campaigns-analytics'],
         ],
       },
       {
@@ -20,11 +64,11 @@ const menuGroups = [
         ],
       },
       {
-        title: 'Growth Operations',
+        title: 'Operations',
         links: [
-          ['CRM & ERP Systems', '/services/crm-erp-portal-operations'],
-          ['Portal Operations', '/services/crm-erp-portal-operations'],
-          ['Growth & Analytics', '/services/growth-campaigns-analytics'],
+          ['AI Automation', '/services/ai-automation-solutions'],
+          ['CRM / ERP / Portals', '/services/crm-erp-portal-operations'],
+          ['Campaign Analytics', '/services/growth-campaigns-analytics'],
         ],
       },
     ],
@@ -34,7 +78,7 @@ const menuGroups = [
     href: '/#industries',
     columns: [
       {
-        title: 'Focus Industries',
+        title: 'Priority Industries',
         links: [
           ['Healthcare & Wellness', '/#industries'],
           ['E-commerce & Retail', '/#industries'],
@@ -42,7 +86,7 @@ const menuGroups = [
         ],
       },
       {
-        title: 'Operational Verticals',
+        title: 'Business Verticals',
         links: [
           ['Travel & Hospitality', '/#industries'],
           ['Manufacturing', '/#industries'],
@@ -56,47 +100,11 @@ const menuGroups = [
     href: '/#portfolio',
     columns: [
       {
-        title: 'Case Study Style Work',
+        title: 'Outcome Stories',
         links: [
-          ['CRM Automation', '/#portfolio'],
-          ['Healthcare Portals', '/#portfolio'],
-          ['Digital Commerce', '/#portfolio'],
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Technologies',
-    href: '/#technologies',
-    columns: [
-      {
-        title: 'Technology Stack',
-        links: [
-          ['AI & ML Workflows', '/#technologies'],
-          ['Next.js / React', '/#technologies'],
-          ['Node.js / PHP', '/#technologies'],
-        ],
-      },
-      {
-        title: 'Business Systems',
-        links: [
-          ['CRM & ERP', '/#technologies'],
-          ['Cloud & APIs', '/#technologies'],
-          ['Analytics Dashboards', '/#technologies'],
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Company',
-    href: '/#company',
-    columns: [
-      {
-        title: 'Innobiz Global',
-        links: [
-          ['About Us', '/#company'],
-          ['How We Work', '/#process'],
-          ['Why Choose Us', '/#why-innobiz'],
+          ['Healthcare Digital Registry', '/#portfolio'],
+          ['Commerce Growth Engine', '/#portfolio'],
+          ['AI Outreach Workflow', '/#portfolio'],
         ],
       },
     ],
@@ -106,11 +114,11 @@ const menuGroups = [
     href: '/#resources',
     columns: [
       {
-        title: 'Insights',
+        title: 'Planning Assets',
         links: [
-          ['Guides', '/#resources'],
-          ['FAQs', '/#resources'],
-          ['Digital Roadmaps', '/#resources'],
+          ['Digital Roadmap Guide', '/#resources'],
+          ['Automation Opportunity Audit', '/#resources'],
+          ['Launch Checklist', '/#resources'],
         ],
       },
     ],
@@ -119,16 +127,15 @@ const menuGroups = [
 
 export function SiteHeader() {
   return (
-    <header className="site-header">
-      <a className="brand" href="/#top" aria-label="Innobiz Global home">
-        <span className="brand-mark">IG</span>
+    <header className="site-header premium-header">
+      <a className="brand premium-brand" href="/#top" aria-label="Innobiz Global home">
+        <span className="brand-mark premium-brand-mark">I</span>
         <span>
-          <strong>Innobiz</strong>
-          <em>Global Ventures</em>
+          <strong>innobizglobal</strong>
         </span>
       </a>
 
-      <nav className="desktop-nav" aria-label="Main navigation">
+      <nav className="desktop-nav premium-nav" aria-label="Main navigation">
         {menuGroups.map((group) => (
           <div className="nav-item" key={group.label}>
             <a className="nav-link" href={group.href}>{group.label}</a>
@@ -136,7 +143,7 @@ export function SiteHeader() {
               <div className="mega-intro">
                 <span>{group.label}</span>
                 <strong>Explore Innobiz {group.label.toLowerCase()}</strong>
-                <p>Structured like a premium digital engineering company, adapted for Innobiz Global’s services and operating model.</p>
+                <p>Business-first digital strategy, product engineering, AI automation, and operating systems for growth-focused companies.</p>
               </div>
               <div className="mega-columns">
                 {group.columns.map((column) => (
@@ -151,9 +158,10 @@ export function SiteHeader() {
             </div>
           </div>
         ))}
+        <a className="nav-link no-chevron explore-link" href="/#solutions">Explore Innobiz Digital</a>
       </nav>
 
-      <a className="header-cta" href="/#contact">Contact Us</a>
+      <a className="header-cta premium-cta" href="/#contact">☎ Contact Us</a>
     </header>
   );
 }

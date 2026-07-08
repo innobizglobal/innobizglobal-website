@@ -1,62 +1,40 @@
-# Innobiz Global Ventures Website
+# Innobiz Global Website v1.3
 
-Premium Next.js corporate website for Innobiz Global Ventures.
+Premium enterprise homepage update for Innobiz Global.
 
-## Version
+## v1.3 Highlights
 
-v1.1 — service detail pages, SEO metadata, reusable components, improved contact enquiry flow, realistic imagery, and additional trust/process sections.
+- Appinventiv-style premium dark top navigation structure.
+- Menu order refined to: InnobizAI, About, Services, Industries, Portfolio, Resources, Explore Innobiz Digital, Contact Us.
+- Full-width cinematic animated hero banner.
+- Circuit-board/AI background with layered dark overlay, glowing motion lines, particle dots, and moving grid.
+- Large centered headline and CTA similar to premium enterprise tech landing pages.
+- Trust/capability strip below the hero.
+- Existing service pages, portfolio, resources, contact form, and content preserved.
 
-## Tech stack
-
-- Next.js 14
-- React 18
-- TypeScript
-- CSS animations
-- Hostinger Web Apps / Node.js deployment ready
-
-## Local setup
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open:
-
-```text
-http://localhost:3000
-```
+Open `http://localhost:3000`.
 
 ## Production build
 
 ```bash
 npm run build
-npm run start
 ```
 
-## Hostinger deployment settings
+## Deploy update
 
-```text
-Framework preset: Next.js
-Branch: main
-Node version: 22.x
-Root directory: ./
-Build and output settings: Default for Next.js
-Environment variables: None for this version
-```
-
-## GitHub update workflow
-
-After replacing files locally:
+Copy these files into the existing local GitHub project folder, then run:
 
 ```bash
 git add .
-git commit -m "Innobiz website v1.1 updates"
+git commit -m "Innobiz v1.3 premium enterprise hero update"
 git push
 ```
 
-Hostinger should redeploy automatically after the push, or you can trigger redeploy manually from hPanel.
-
-## Contact form note
-
-The contact form opens the visitor's email application with enquiry details addressed to `hello@innobizglobal.com`. For direct server-side email delivery, add SMTP credentials later and replace the mailto flow with an API route.
+Hostinger Web Apps should redeploy from GitHub automatically. If not, click Redeploy in Hostinger.
