@@ -24,3 +24,9 @@ git push
 ```
 
 If Hostinger does not redeploy automatically, click Redeploy from the Web Apps deployment screen.
+
+
+## v1.6.1 Emergency CSS Loading Fix
+This package adds the full global stylesheet as inline critical CSS in `app/layout.tsx`. It keeps `app/globals.css` also, but the inline CSS ensures the site remains styled even if Hostinger/Next static CSS assets are cached, delayed, or temporarily blocked.
+
+Use this when the live site appears as plain HTML with blue links and default browser fonts.
