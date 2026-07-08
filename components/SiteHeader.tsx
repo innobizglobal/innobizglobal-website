@@ -127,15 +127,13 @@ const menuGroups = [
 
 export function SiteHeader() {
   return (
-    <header className="site-header premium-header v14-header">
-      <a className="brand premium-brand v14-brand" href="/#top" aria-label="Innobiz Global home">
-        <span className="brand-mark premium-brand-mark v14-brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 64 64" role="img" focusable="false">
-            <path d="M32 4 56 18v28L32 60 8 46V18L32 4Z" fill="none" stroke="currentColor" strokeWidth="6" strokeLinejoin="round" />
-            <path d="M32 4v22M56 18 36 30M8 18l20 12M28 34 8 46M36 34l20 12M32 60V38" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity=".9" />
-          </svg>
-        </span>
-        <span className="brand-wordmark"><strong>innobiz</strong><em>global</em></span>
+    <header className="site-header premium-header v14-header v16-header">
+      <a className="brand premium-brand v14-brand v16-brand" href="/#top" aria-label="Innobiz Global Ventures home">
+        <img
+          className="v16-nav-logo"
+          src="/images/innobiz-logo-nav.png"
+          alt="Innobiz Global Ventures"
+        />
       </a>
 
       <nav className="desktop-nav premium-nav v14-nav" aria-label="Main navigation">

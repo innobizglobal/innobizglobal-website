@@ -62,7 +62,7 @@ export function PremiumHero() {
   const activeClass = useMemo(() => `hero-slide-${active + 1}`, [active]);
 
   return (
-    <section id="top" className={`enterprise-hero v14-hero v15-hero ${activeClass}`}>
+    <section id="top" className={`enterprise-hero v14-hero v15-hero v16-hero ${activeClass}`}>
       <div className="v14-hero-ambient v15-hero-ambient" aria-hidden="true">
         <span className="v14-beam beam-one" />
         <span className="v14-beam beam-two" />

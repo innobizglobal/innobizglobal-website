@@ -2,12 +2,12 @@ export function Footer() {
   return (
     <footer className="footer">
       <div>
-        <a className="brand" href="/#top" aria-label="Innobiz Global home">
-          <span className="brand-mark">IG</span>
-          <span>
-            <strong>Innobiz</strong>
-            <em>Global Ventures</em>
-          </span>
+        <a className="brand v16-footer-brand" href="/#top" aria-label="Innobiz Global Ventures home">
+          <img
+            className="v16-footer-logo"
+            src="/images/innobiz-logo-nav.png"
+            alt="Innobiz Global Ventures"
+          />
         </a>
         <p>Digital transformation, product engineering, AI automation, portal operations, CRM workflows, and analytics-led growth for ambitious businesses.</p>
       </div>

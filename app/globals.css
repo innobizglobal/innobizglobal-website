@@ -2601,3 +2601,302 @@ p {
     font-size: 0.72rem;
   }
 }
+
+/* v1.6 Innobiz Global Ventures logo and brand color alignment */
+:root {
+  --brand-navy: #071b55;
+  --brand-deep-blue: #0b2f8a;
+  --brand-blue: #1458ff;
+  --brand-electric-blue: #1e63ff;
+  --brand-orange: #ff8a00;
+  --brand-orange-deep: #ff5a00;
+  --brand-dark: #05070d;
+  --brand-dark-blue: #08142c;
+  --brand-soft: #c5cde5;
+  --cyan: #31cfff;
+  --blue: #1458ff;
+  --violet: #0b2f8a;
+  --lime: #ff8a00;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 8%, rgba(30, 99, 255, 0.22), transparent 31%),
+    radial-gradient(circle at 86% 3%, rgba(255, 138, 0, 0.13), transparent 25%),
+    radial-gradient(circle at 55% 90%, rgba(11, 47, 138, 0.26), transparent 36%),
+    linear-gradient(180deg, #05070d 0%, #08142c 46%, #05070d 100%);
+}
+
+.kicker,
+.v15-hero-eyebrow {
+  color: var(--brand-orange);
+  text-shadow: 0 0 24px rgba(255, 138, 0, 0.32);
+}
+
+.v16-header {
+  min-height: 92px;
+  padding: 0 max(28px, 2.5vw);
+  background: rgba(4, 5, 9, 0.96);
+  border-top: 0;
+  border-bottom-color: rgba(30, 99, 255, 0.20);
+  position: sticky;
+}
+
+.v16-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--brand-orange), var(--brand-orange-deep) 25%, var(--brand-blue) 58%, var(--brand-electric-blue));
+  box-shadow: 0 0 26px rgba(255, 138, 0, 0.32), 0 0 26px rgba(30, 99, 255, 0.26);
+}
+
+.v16-brand {
+  min-width: max-content;
+  gap: 0;
+}
+
+.v16-nav-logo {
+  display: block;
+  height: 58px;
+  width: auto;
+  max-width: min(390px, 32vw);
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.55));
+}
+
+.v16-header .nav-link:hover,
+.v16-header .nav-link:hover::after,
+.footer-columns a:hover {
+  color: var(--brand-orange) !important;
+}
+
+.v16-header .mega-menu {
+  border-color: rgba(30, 99, 255, 0.28);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.42), 0 0 0 1px rgba(255, 138, 0, 0.06);
+}
+
+.v16-header .mega-intro span,
+.v16-header .mega-column h4 {
+  color: var(--brand-orange);
+}
+
+.v16-header .mega-column a:hover {
+  color: var(--brand-electric-blue);
+}
+
+.v16-header .header-cta {
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-electric-blue));
+  border-color: rgba(30, 99, 255, 0.8);
+  box-shadow: 0 18px 46px rgba(30, 99, 255, 0.36);
+}
+
+.v16-header .header-cta:hover {
+  background: linear-gradient(135deg, var(--brand-orange), var(--brand-orange-deep));
+  border-color: rgba(255, 138, 0, 0.88);
+  box-shadow: 0 22px 58px rgba(255, 104, 0, 0.25);
+}
+
+.v16-hero {
+  background:
+    linear-gradient(180deg, rgba(2,4,10,0.10) 0%, rgba(2,7,20,0.48) 43%, rgba(1,4,12,0.93) 100%),
+    radial-gradient(circle at 23% 51%, rgba(255, 138, 0, 0.14), transparent 23%),
+    linear-gradient(90deg, rgba(1,4,10,0.50), rgba(1,7,18,0.08) 50%, rgba(1,4,10,0.50)),
+    url('/images/innobiz-ai-circuit-bg.svg') center center / cover no-repeat;
+}
+
+.v16-hero.hero-slide-1::before,
+.v16-hero.hero-slide-2::before,
+.v16-hero.hero-slide-3::before,
+.v16-hero.hero-slide-4::before {
+  background:
+    radial-gradient(circle at 50% 34%, rgba(30, 99, 255, 0.30), transparent 20%),
+    radial-gradient(circle at 46% 45%, rgba(11, 47, 138, 0.38), transparent 32%),
+    radial-gradient(circle at 22% 55%, rgba(255, 138, 0, 0.17), transparent 25%),
+    radial-gradient(circle at 82% 56%, rgba(30, 99, 255, 0.18), transparent 28%);
+}
+
+.v16-hero h1 {
+  font-size: clamp(2.1rem, 3.45vw, 3.85rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  max-width: 980px;
+}
+
+.v16-hero .v15-hero-text {
+  color: rgba(242, 247, 255, 0.88);
+}
+
+.v16-hero .v15-hero-cta {
+  background: #ffffff;
+  color: #081126;
+  border: 1px solid rgba(255,255,255,0.78);
+}
+
+.v16-hero .v15-hero-cta:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-orange));
+  border-color: rgba(255, 138, 0, 0.78);
+  box-shadow: 0 28px 70px rgba(255, 104, 0, 0.22), 0 24px 70px rgba(30, 99, 255, 0.18);
+}
+
+.v16-hero .v15-secondary-link:hover {
+  border-color: rgba(255, 138, 0, 0.70);
+  color: #fff;
+  background: rgba(255, 138, 0, 0.12);
+}
+
+.v16-hero .v15-capability-switcher {
+  border-color: rgba(30, 99, 255, 0.22);
+  background: rgba(3, 9, 24, 0.68);
+}
+
+.v16-hero .v15-capability-switcher button span {
+  color: var(--brand-orange);
+}
+
+.v16-hero .v15-capability-switcher button:hover,
+.v16-hero .v15-capability-switcher button.active {
+  background: linear-gradient(180deg, rgba(30, 99, 255, 0.30), rgba(255, 138, 0, 0.12));
+  box-shadow: inset 0 0 0 1px rgba(255, 138, 0, 0.25), 0 0 36px rgba(30, 99, 255, 0.18);
+}
+
+.v16-hero .v15-hero-metric {
+  border-color: rgba(255, 138, 0, 0.24);
+  background: linear-gradient(145deg, rgba(7, 27, 85, 0.90), rgba(5, 7, 13, 0.74));
+}
+
+.v16-hero .v15-hero-metric span {
+  color: var(--brand-orange);
+}
+
+.v16-hero .v14-trust-title span {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.40), rgba(255, 138, 0, 0.95));
+}
+
+.v16-hero .v14-trust-title span:last-child {
+  background: linear-gradient(90deg, rgba(30, 99, 255, 0.95), rgba(255,255,255,0.40), transparent);
+}
+
+.v16-hero .v14-trust-title span::after,
+.v16-hero .v14-trust-title span:last-child::after {
+  background: var(--brand-orange);
+  box-shadow: 0 0 18px rgba(255, 138, 0, 0.95);
+}
+
+.logo-marquee {
+  background: linear-gradient(90deg, rgba(7, 27, 85, 0.30), rgba(255, 138, 0, 0.08), rgba(7, 27, 85, 0.30));
+  border-color: rgba(30, 99, 255, 0.18);
+}
+
+.logo-marquee span:nth-child(2n),
+.impact-card strong,
+.service-card span,
+.resource-card a,
+.service-card a {
+  color: var(--brand-orange);
+}
+
+.btn-primary,
+.contact-form button {
+  background: linear-gradient(135deg, var(--brand-blue), var(--brand-electric-blue));
+  box-shadow: 0 18px 52px rgba(30, 99, 255, 0.26);
+}
+
+.btn-primary:hover,
+.contact-form button:hover {
+  background: linear-gradient(135deg, var(--brand-orange), var(--brand-orange-deep));
+  border-color: rgba(255, 138, 0, 0.58);
+}
+
+.service-card span {
+  background: rgba(255, 138, 0, 0.10);
+  border-color: rgba(255, 138, 0, 0.22);
+}
+
+.service-card:hover,
+.resource-card:hover,
+.impact-card:hover {
+  border-color: rgba(255, 138, 0, 0.40);
+  background: linear-gradient(145deg, rgba(11,47,138,0.22), rgba(255,138,0,0.055));
+}
+
+.service-card::after {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 138, 0, 0.18), transparent 58%);
+}
+
+.dark-band {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012)),
+    radial-gradient(circle at 23% 26%, rgba(255,138,0,0.09), transparent 32%),
+    radial-gradient(circle at center, rgba(30,99,255,0.14), transparent 45%);
+}
+
+.v16-footer-brand {
+  display: inline-flex;
+  width: max-content;
+}
+
+.v16-footer-logo {
+  display: block;
+  height: 78px;
+  width: auto;
+  max-width: min(430px, 82vw);
+  object-fit: contain;
+  filter: drop-shadow(0 16px 32px rgba(0,0,0,0.5));
+}
+
+.footer {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(255, 138, 0, 0.08), transparent 34%),
+    radial-gradient(circle at 75% 0%, rgba(30, 99, 255, 0.14), transparent 36%),
+    rgba(0,0,0,0.30);
+}
+
+@media (max-width: 1360px) {
+  .v16-nav-logo {
+    height: 52px;
+    max-width: 300px;
+  }
+
+  .v14-nav {
+    gap: clamp(12px, 1.2vw, 22px);
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .v16-nav-logo {
+    height: 58px;
+    max-width: min(360px, 58vw);
+  }
+}
+
+@media (max-width: 720px) {
+  .v16-header {
+    min-height: 78px;
+    padding: 0 16px;
+  }
+
+  .v16-nav-logo {
+    height: 50px;
+    max-width: min(310px, 72vw);
+  }
+
+  .v16-hero h1 {
+    font-size: clamp(1.9rem, 9vw, 2.75rem);
+  }
+
+  .v16-footer-logo {
+    height: 62px;
+  }
+}
+
+@media (max-width: 440px) {
+  .v16-nav-logo {
+    height: 44px;
+    max-width: 76vw;
+  }
+}
