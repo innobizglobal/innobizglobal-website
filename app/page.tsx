@@ -96,7 +96,7 @@ export default function Home() {
           </p>
           <div className="industry-pills">
             {industries.map((item) => (
-              <span key={item}>{item}</span>
+              <a key={item.slug} href={`/industries/${item.slug}`}>{item.title}</a>
             ))}
           </div>
         </div>
@@ -188,11 +188,11 @@ export default function Home() {
           <h2>Guides and planning assets for digital execution.</h2>
         </div>
         <div className="resource-grid">
-          {resources.map(([title, text]) => (
-            <article className="resource-card reveal" key={title}>
-              <h3>{title}</h3>
-              <p>{text}</p>
-              <a href="#contact">Request this guide →</a>
+          {resources.map((item) => (
+            <article className="resource-card reveal" key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+              <a href={`/resources/${item.slug}`}>View resource →</a>
             </article>
           ))}
         </div>

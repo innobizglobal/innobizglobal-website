@@ -1,26 +1,65 @@
-# Innobiz Global Website v1.6 – Logo & Brand Color Alignment
+# Innobiz Global Website v1.7 - Individual Menu Pages
 
-This update aligns the website with the uploaded Innobiz Global Ventures logo.
+This update creates individual pages for every main menu item and dropdown link in the Innobiz Global website.
 
-## Included
+## Added main pages
 
-- Actual Innobiz Global Ventures logo asset added under `public/images/`.
-- New transparent header logo generated from the uploaded logo.
-- Header and footer updated to use the logo.
-- Brand palette updated around deep blue, electric blue, warm orange, and dark navy.
-- Hero, CTA buttons, cards, hover effects, trust strip, and footer accents now follow the logo colors.
-- v1.5 interactive hero functionality is preserved.
+- `/innobizai`
+- `/about`
+- `/services`
+- `/industries`
+- `/portfolio`
+- `/resources`
+- `/explore-innobiz-digital`
+- `/contact`
 
-## Deploy
+## Added dropdown/detail pages
 
-Copy the contents into the existing project folder, then run:
+### InnobizAI
+- `/innobizai/business-assistants`
+- `/innobizai/workflow-automation`
+- `/innobizai/outreach-systems`
+- `/innobizai/lead-qualification`
+- `/innobizai/customer-support-intelligence`
+- `/innobizai/email-whatsapp-automation`
 
-```bash
-npm install
-npm run build
-git add .
-git commit -m "Innobiz v1.6 logo and brand color alignment"
-git push
-```
+### About
+- `/about/how-we-work`
+- `/about/why-innobiz`
+- `/about/consulting-first`
+- `/about/build-to-scale`
+- `/about/launch-improve`
 
-If Hostinger does not redeploy automatically, click Redeploy from the Web Apps deployment screen.
+### Services
+- `/services/digital-transformation-consulting`
+- `/services/product-engineering-web-apps`
+- `/services/ai-automation-solutions`
+- `/services/cloud-devops-managed-it`
+- `/services/crm-erp-portal-operations`
+- `/services/growth-campaigns-analytics`
+
+### Industries
+- `/industries/healthcare-wellness`
+- `/industries/ecommerce-retail`
+- `/industries/pharma-labs`
+- `/industries/travel-hospitality`
+- `/industries/retail-distribution`
+- `/industries/manufacturing`
+- `/industries/professional-services`
+- `/industries/startups-new-ventures`
+
+### Portfolio
+- `/portfolio/healthcare-digital-registry`
+- `/portfolio/commerce-growth-engine`
+- `/portfolio/ai-outreach-workflow`
+
+### Resources
+- `/resources/digital-roadmap-guide`
+- `/resources/automation-opportunity-audit`
+- `/resources/launch-readiness-checklist`
+
+## Notes
+- Build tested successfully using `npm run build`.
+- This package does not include `.next` or `node_modules`.
+- It keeps the Innobiz logo and brand-color direction from v1.6.
+- It removes the emergency inline CSS approach from v1.6.1 and returns to standard Next.js CSS handling.

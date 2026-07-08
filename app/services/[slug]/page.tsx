@@ -1,101 +1,64 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Footer } from '../../../components/Footer';
+import { PageHero } from '../../../components/PageHero';
+import { ContentImageBlock, CTASection, FeatureGrid } from '../../../components/PageSections';
 import { SiteHeader } from '../../../components/SiteHeader';
-import { getService, services } from '../../../lib/content';
+import { services } from '../../../lib/content';
 
-type PageProps = {
-  params: {
-    slug: string;
-  };
-};
+type Props = { params: { slug: string } };
 
 export function generateStaticParams() {
   return services.map((service) => ({ slug: service.slug }));
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
-  const service = getService(params.slug);
-  if (!service) {
-    return { title: 'Service | Innobiz Global Ventures' };
-  }
-
+export function generateMetadata({ params }: Props): Metadata {
+  const service = services.find((item) => item.slug === params.slug);
+  if (!service) return { title: 'Service' };
   return {
-    title: `${service.title} | Innobiz Global Ventures`,
+    title: service.title,
     description: service.short,
   };
 }
 
-export default function ServicePage({ params }: PageProps) {
-  const service = getService(params.slug);
-
-  if (!service) {
-    notFound();
-  }
+export default function ServiceDetailPage({ params }: Props) {
+  const service = services.find((item) => item.slug === params.slug);
+  if (!service) notFound();
 
   return (
     <main>
       <SiteHeader />
-
-      <section className="service-hero section-pad">
-        <div className="service-hero-copy reveal">
-          <p className="kicker">{service.eyebrow} • Innobiz Service</p>
-          <h1>{service.title}</h1>
-          <p className="hero-text">{service.description}</p>
-          <div className="hero-actions">
-            <a className="btn btn-primary" href="/#contact">Discuss this service</a>
-            <a className="btn btn-ghost" href="/#services">Back to services</a>
-          </div>
+      <PageHero eyebrow="Innobiz Service" title={service.title} text={service.short} />
+      <ContentImageBlock title={service.title} text={service.pageIntro || service.description} image={service.image} alt={service.title} />
+      <section className="section-pad inner-detail-section dark-band">
+        <div className="section-head reveal">
+          <p className="kicker">What We Deliver</p>
+          <h2>Practical capabilities for real business execution.</h2>
         </div>
-        <div className="service-hero-image reveal delay-1">
-          <img src={service.image} alt={service.title} />
+        <FeatureGrid items={service.features} />
+      </section>
+      <section className="section-pad inner-detail-section">
+        <div className="section-head reveal">
+          <p className="kicker">Outcomes</p>
+          <h2>What the business should gain.</h2>
+        </div>
+        <FeatureGrid items={service.outcomes} />
+      </section>
+      <section className="section-pad inner-detail-section dark-band">
+        <div className="section-head reveal">
+          <p className="kicker">Delivery Process</p>
+          <h2>How this service is usually delivered.</h2>
+        </div>
+        <div className="timeline">
+          {service.process.map((step, index) => (
+            <article className="timeline-item reveal" key={step}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <div><h3>{step}</h3><p>Each step is aligned to business priorities, user needs, and practical launch readiness.</p></div>
+            </article>
+          ))}
         </div>
       </section>
-
-      <section className="section-pad detail-section">
-        <div className="detail-card reveal">
-          <p className="kicker">Expected Outcomes</p>
-          <h2>What this helps you achieve.</h2>
-          <div className="detail-list three-col">
-            {service.outcomes.map((item) => (
-              <span key={item}>{item}</span>
-            ))}
-          </div>
-        </div>
-
-        <div className="detail-grid">
-          <article className="detail-card reveal">
-            <p className="kicker">Included</p>
-            <h2>Core capabilities.</h2>
-            <ul>
-              {service.features.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-          <article className="detail-card reveal delay-1">
-            <p className="kicker">Method</p>
-            <h2>How we approach it.</h2>
-            <ul>
-              {service.process.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section className="section-pad cta-band">
-        <div className="showcase-card reveal">
-          <div>
-            <p className="kicker">Next Step</p>
-            <h2>Ready to plan this for your business?</h2>
-            <p>Share your current requirement and Innobiz can convert it into a clear roadmap, platform structure, and implementation plan.</p>
-          </div>
-          <a className="btn btn-primary" href="/#contact">Start an enquiry</a>
-        </div>
-      </section>
-
+      <CTASection />
       <Footer />
     </main>
   );

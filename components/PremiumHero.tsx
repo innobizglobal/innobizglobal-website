@@ -81,10 +81,10 @@ export function PremiumHero() {
         <p className="hero-text hero-centered-text v14-hero-text v15-hero-text">{current.text}</p>
 
         <div className="hero-actions hero-actions-center v15-hero-actions">
-          <a className="btn hero-white-cta v14-hero-cta v15-hero-cta" href="#contact">
+          <a className="btn hero-white-cta v14-hero-cta v15-hero-cta" href="/contact">
             {current.cta} <span>→</span>
           </a>
-          <a className="v15-secondary-link" href="#services">Explore services</a>
+          <a className="v15-secondary-link" href="/services">Explore services</a>
         </div>
 
         <div className="v15-capability-switcher" aria-label="Hero service switcher">
