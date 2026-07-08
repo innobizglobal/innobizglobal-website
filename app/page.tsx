@@ -1,6 +1,7 @@
 import { ContactForm } from '../components/ContactForm';
 import { Footer } from '../components/Footer';
 import { SiteHeader } from '../components/SiteHeader';
+import { PremiumHero } from '../components/PremiumHero';
 import {
   impactCards,
   industries,
@@ -18,45 +19,7 @@ export default function Home() {
     <main>
       <SiteHeader />
 
-      <section id="top" className="enterprise-hero v14-hero">
-        <div className="v14-hero-ambient" aria-hidden="true">
-          <span className="v14-beam beam-one" />
-          <span className="v14-beam beam-two" />
-          <span className="v14-beam beam-three" />
-          <span className="v14-orb orb-one" />
-          <span className="v14-orb orb-two" />
-          <span className="v14-orb orb-three" />
-          <span className="v14-data-spike spike-one" />
-          <span className="v14-data-spike spike-two" />
-          <span className="v14-data-spike spike-three" />
-        </div>
-
-        <div className="enterprise-hero-content v14-hero-content reveal">
-          <h1>AI, Digital &amp; Automation Services</h1>
-          <p className="hero-text hero-centered-text v14-hero-text">
-            We help businesses accelerate digital transformation with AI-powered workflows, intelligent automation, and data-driven solutions built for scale. Secure, efficient, and future-ready systems that drive measurable impact.
-          </p>
-          <div className="hero-actions hero-actions-center">
-            <a className="btn hero-white-cta v14-hero-cta" href="#contact">Consult Our Experts <span>→</span></a>
-          </div>
-        </div>
-
-        <div className="enterprise-trust v14-trust reveal delay-1" aria-label="Innobiz trusted capability strip">
-          <div className="trust-title v14-trust-title">
-            <span />
-            <strong>TRUSTED BY GROWING BUSINESSES, ENTERPRISES AND INNOVATORS</strong>
-            <span />
-          </div>
-          <div className="trust-logo-row v14-logo-row">
-            <span className="wordmark novatech">NovaTech</span>
-            <span className="wordmark prime">Prime <small>Retail</small></span>
-            <span className="wordmark axis">Axis <small>Foods</small></span>
-            <span className="wordmark cloudmint">CloudMint</span>
-            <span className="wordmark bluepeak">BluePeak</span>
-            <span className="wordmark urbangrid">UrbanGrid</span>
-          </div>
-        </div>
-      </section>
+      <PremiumHero />
 
       <section className="logo-marquee" aria-label="Innobiz capability strip">
         <span>Strategy</span>
