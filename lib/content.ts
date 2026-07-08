@@ -12,34 +12,34 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: 'digital-business-consulting',
+    slug: 'digital-transformation-consulting',
     eyebrow: '01',
-    title: 'Digital Business Consulting',
-    short: 'Turn business ideas into structured digital growth models, customer journeys, and practical launch roadmaps.',
+    title: 'Digital Transformation Consulting',
+    short: 'Strategy, roadmap, operating model, customer journey, automation plan, and launch priorities for digital-first businesses.',
     description:
-      'We help founders and growing businesses convert an idea, process, or offline service into a clear digital business model with positioning, offers, workflows, platform architecture, and launch priorities.',
+      'We help businesses move from scattered digital activity to a structured transformation roadmap covering brand presence, product architecture, customer acquisition, CRM, automation, analytics, and operating discipline.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=85',
-    outcomes: ['Clear digital roadmap', 'Customer journey blueprint', 'Revenue and operations model'],
-    features: ['Business model mapping', 'Customer journey design', 'Launch roadmap', 'Operational workflow planning'],
-    process: ['Discovery workshop', 'Market and audience mapping', 'Digital roadmap', 'Launch priority plan'],
+    outcomes: ['Transformation roadmap', 'Customer journey blueprint', 'Revenue and operations model'],
+    features: ['Business model mapping', 'Customer journey design', 'Digital operating model', 'Implementation roadmap'],
+    process: ['Discovery workshop', 'Opportunity mapping', 'Roadmap design', 'Execution planning'],
   },
   {
-    slug: 'website-app-development',
+    slug: 'product-engineering-web-apps',
     eyebrow: '02',
-    title: 'Website & App Development',
-    short: 'Premium websites, landing pages, mobile-first applications, dashboards, and portals built around business outcomes.',
+    title: 'Product Engineering & Web Apps',
+    short: 'Premium websites, portals, mobile-first web applications, landing pages, dashboards, and internal business systems.',
     description:
-      'We create high-quality digital experiences that look premium, load fast, communicate clearly, and support lead capture, enquiries, content, campaigns, and future automation.',
+      'We design and engineer digital products that look premium, load fast, support real business workflows, and can grow into portals, dashboards, mobile interfaces, and customer-facing platforms.',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85',
-    outcomes: ['Premium brand presence', 'Lead-ready website', 'Mobile-first experience'],
-    features: ['Corporate websites', 'Landing pages', 'Custom web apps', 'Admin dashboards'],
-    process: ['Information architecture', 'UI design', 'Development', 'Testing and deployment'],
+    outcomes: ['Premium web presence', 'Scalable product foundation', 'Mobile-first experience'],
+    features: ['Corporate websites', 'Web applications', 'Landing pages', 'Admin dashboards'],
+    process: ['Information architecture', 'UX/UI direction', 'Development', 'Testing and deployment'],
   },
   {
     slug: 'ai-automation-solutions',
     eyebrow: '03',
     title: 'AI Automation Solutions',
-    short: 'AI assistants, smart workflows, response drafting, lead qualification, summaries, reminders, and decision dashboards.',
+    short: 'AI assistants, enquiry intelligence, response drafting, lead qualification, summaries, reminders, and workflow automation.',
     description:
       'We design practical AI workflows that reduce repetitive work and help teams respond faster, summarize information, classify enquiries, draft communication, and make operations more visible.',
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=85',
@@ -48,26 +48,26 @@ export const services: Service[] = [
     process: ['Workflow audit', 'AI use-case design', 'Automation build', 'Team handover'],
   },
   {
-    slug: 'ecommerce-portal-operations',
+    slug: 'cloud-devops-managed-it',
     eyebrow: '04',
-    title: 'E-commerce & Portal Operations',
-    short: 'Portal setup, catalogue management, order capture, payment coordination, CRM workflow, and support operations.',
+    title: 'Cloud, DevOps & Managed IT',
+    short: 'Hosting architecture, deployment pipelines, performance tuning, monitoring, backups, security basics, and support continuity.',
     description:
-      'We help companies run online portals with better catalogue structure, enquiry capture, order workflow, customer support, payment coordination, and operational reporting.',
-    image: 'https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?auto=format&fit=crop&w=1200&q=85',
-    outcomes: ['Organized online operations', 'Better order visibility', 'Reduced manual follow-up'],
-    features: ['Product/service catalogue', 'Order workflow', 'Payment coordination', 'Support queue'],
-    process: ['Portal planning', 'Catalogue setup', 'CRM linkage', 'Operations dashboard'],
+      'We help businesses move from fragile deployments to structured cloud-ready systems with reliable hosting, version control, deployment routines, backups, performance checks, and support processes.',
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=85',
+    outcomes: ['Reliable deployments', 'Better performance', 'Operational continuity'],
+    features: ['Cloud hosting setup', 'Deployment workflows', 'Performance optimization', 'Monitoring and backup planning'],
+    process: ['Infrastructure audit', 'Deployment setup', 'Security and backup checks', 'Support handover'],
   },
   {
-    slug: 'crm-customer-support-systems',
+    slug: 'crm-erp-portal-operations',
     eyebrow: '05',
-    title: 'CRM & Customer Support Systems',
-    short: 'Lead pipelines, support queues, reminders, WhatsApp handoffs, enquiry tracking, and team productivity systems.',
+    title: 'CRM, ERP & Portal Operations',
+    short: 'Lead pipelines, customer support queues, order workflows, enquiry tracking, reminders, internal portals, and reporting systems.',
     description:
-      'We build structured CRM and customer support workflows so every enquiry, lead, follow-up, support request, and task has visibility and ownership.',
+      'We build structured CRM, ERP-lite, and portal workflows so every enquiry, order, task, payment coordination, support request, and follow-up has visibility and ownership.',
     image: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85',
-    outcomes: ['No lost enquiries', 'Clear team accountability', 'Better follow-up discipline'],
+    outcomes: ['No lost enquiries', 'Clear team accountability', 'Better operational reporting'],
     features: ['Lead pipeline', 'Follow-up reminders', 'Support queue', 'Management reports'],
     process: ['Current process mapping', 'CRM flow design', 'Automation setup', 'Reporting dashboard'],
   },
@@ -75,7 +75,7 @@ export const services: Service[] = [
     slug: 'growth-campaigns-analytics',
     eyebrow: '06',
     title: 'Growth Campaigns & Analytics',
-    short: 'Campaign landing pages, conversion tracking, email outreach systems, analytics dashboards, and optimization loops.',
+    short: 'Campaign landing pages, conversion tracking, email outreach systems, dashboards, and performance optimization loops.',
     description:
       'We connect digital campaigns with lead capture, CRM follow-up, performance tracking, and analytics so marketing activity becomes measurable and manageable.',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=85',
@@ -88,8 +88,10 @@ export const services: Service[] = [
 export const industries = [
   'Healthcare & Wellness',
   'E-commerce & D2C',
-  'Pharmaceuticals',
+  'Pharmaceuticals & Labs',
+  'Travel & Hospitality',
   'Retail & Distribution',
+  'Manufacturing',
   'Professional Services',
   'Startups & New Ventures',
 ];
@@ -137,6 +139,46 @@ export const solutions = [
     text: 'Capture leads from campaigns, route them to teams, follow up properly, and measure the complete sales funnel.',
     image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=85',
   },
+];
+
+export const portfolioCards = [
+  {
+    title: 'Healthcare Digital Registry',
+    category: 'Healthcare platform',
+    text: 'Patient onboarding, clinical workflow, reminders, daily logs, and management dashboards connected into one operating system.',
+    image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=85',
+  },
+  {
+    title: 'Commerce Growth Engine',
+    category: 'E-commerce operations',
+    text: 'Lead capture, catalogue structure, enquiry workflow, order coordination, WhatsApp handoff, and analytics visibility.',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=85',
+  },
+  {
+    title: 'AI Outreach Workflow',
+    category: 'Sales automation',
+    text: 'Prospect capture, Gmail draft creation, campaign tracking, reply summary, and next-action intelligence for business development teams.',
+    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=85',
+  },
+];
+
+export const technologies = [
+  'AI / LLM Workflows',
+  'Next.js / React',
+  'Node.js',
+  'PHP / MySQL',
+  'Cloud Hosting',
+  'CRM / ERP Systems',
+  'API Integrations',
+  'Analytics Dashboards',
+  'WhatsApp & Email Automation',
+  'SEO Landing Pages',
+];
+
+export const resources = [
+  ['Digital Roadmap Guide', 'Plan website, CRM, automation, analytics, and growth campaigns before development starts.'],
+  ['Automation Opportunity Audit', 'Identify repetitive manual tasks that can be converted into AI-assisted workflows.'],
+  ['Launch Readiness Checklist', 'Prepare content, leads, enquiry flow, analytics, hosting, SSL, and post-launch operations.'],
 ];
 
 export const testimonials = [
