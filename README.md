@@ -1,32 +1,33 @@
-# Innobiz Global Website v1.6 – Logo & Brand Color Alignment
+# Innobiz Global Website v1.5
 
-This update aligns the website with the uploaded Innobiz Global Ventures logo.
+Premium AI hero refinement update.
 
-## Included
+## What changed
 
-- Actual Innobiz Global Ventures logo asset added under `public/images/`.
-- New transparent header logo generated from the uploaded logo.
-- Header and footer updated to use the logo.
-- Brand palette updated around deep blue, electric blue, warm orange, and dark navy.
-- Hero, CTA buttons, cards, hover effects, trust strip, and footer accents now follow the logo colors.
-- v1.5 interactive hero functionality is preserved.
+- Drastically reduced hero banner title size to match a premium enterprise reference style.
+- Fixed overcrowding in the hero section and improved spacing between title, paragraph, CTA, trust strip, and logos.
+- Added interactive hero functionality:
+  - Auto-rotating hero messages.
+  - Clickable capability switcher: AI Automation, Product Engineering, CRM Operations, Growth Systems.
+  - Hero title, paragraph, CTA label, metric card, and background glow change based on selected capability.
+- Added secondary CTA: Explore services.
+- Added floating metric card on desktop.
+- Improved responsive mobile hero sizing.
+- Build tested successfully with `npm run build`.
 
-## Deploy
+## Update steps
 
-Copy the contents into the existing project folder, then run:
+Copy these files into your existing local project folder and replace files when asked.
+
+Then run:
 
 ```bash
+cd "/c/Users/ramar/Downloads/innobizglobal-next-website-v1/innobizglobal-next"
 npm install
 npm run build
 git add .
-git commit -m "Innobiz v1.6 logo and brand color alignment"
+git commit -m "Innobiz v1.5 hero size and functionality update"
 git push
 ```
 
-If Hostinger does not redeploy automatically, click Redeploy from the Web Apps deployment screen.
-
-
-## v1.6.1 Emergency CSS Loading Fix
-This package adds the full global stylesheet as inline critical CSS in `app/layout.tsx`. It keeps `app/globals.css` also, but the inline CSS ensures the site remains styled even if Hostinger/Next static CSS assets are cached, delayed, or temporarily blocked.
-
-Use this when the live site appears as plain HTML with blue links and default browser fonts.
+Hostinger should redeploy automatically. If not, open Hostinger Web Apps and click Redeploy.
