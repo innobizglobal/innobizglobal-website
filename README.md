@@ -1,65 +1,26 @@
-# Innobiz Global Website v1.7 - Individual Menu Pages
+# Innobiz Global Website v1.8 - White Theme Conversion
 
-This update creates individual pages for every main menu item and dropdown link in the Innobiz Global website.
+This package converts the Innobiz Global website from a dark premium theme into a white, clean, corporate technology theme aligned with the Innobiz Global Ventures logo.
 
-## Added main pages
+## Changes
 
-- `/innobizai`
-- `/about`
-- `/services`
-- `/industries`
-- `/portfolio`
-- `/resources`
-- `/explore-innobiz-digital`
-- `/contact`
+- Converted the overall website to a white/light theme.
+- Added a new light AI/network hero background SVG.
+- Kept the Innobiz logo and blue/orange brand palette.
+- Updated header, mega menu, hero, service cards, inner pages, contact form, and footer for light mode.
+- Preserved the interactive hero switcher and individual menu pages from v1.7.
+- Avoided the emergency inline CSS approach that previously caused deployment trouble.
 
-## Added dropdown/detail pages
+## Deploy
 
-### InnobizAI
-- `/innobizai/business-assistants`
-- `/innobizai/workflow-automation`
-- `/innobizai/outreach-systems`
-- `/innobizai/lead-qualification`
-- `/innobizai/customer-support-intelligence`
-- `/innobizai/email-whatsapp-automation`
+Copy these files into your existing local project folder, replacing old files, then run:
 
-### About
-- `/about/how-we-work`
-- `/about/why-innobiz`
-- `/about/consulting-first`
-- `/about/build-to-scale`
-- `/about/launch-improve`
+```bash
+npm install
+npm run build
+git add .
+git commit -m "Innobiz v1.8 white theme conversion"
+git push
+```
 
-### Services
-- `/services/digital-transformation-consulting`
-- `/services/product-engineering-web-apps`
-- `/services/ai-automation-solutions`
-- `/services/cloud-devops-managed-it`
-- `/services/crm-erp-portal-operations`
-- `/services/growth-campaigns-analytics`
-
-### Industries
-- `/industries/healthcare-wellness`
-- `/industries/ecommerce-retail`
-- `/industries/pharma-labs`
-- `/industries/travel-hospitality`
-- `/industries/retail-distribution`
-- `/industries/manufacturing`
-- `/industries/professional-services`
-- `/industries/startups-new-ventures`
-
-### Portfolio
-- `/portfolio/healthcare-digital-registry`
-- `/portfolio/commerce-growth-engine`
-- `/portfolio/ai-outreach-workflow`
-
-### Resources
-- `/resources/digital-roadmap-guide`
-- `/resources/automation-opportunity-audit`
-- `/resources/launch-readiness-checklist`
-
-## Notes
-- Build tested successfully using `npm run build`.
-- This package does not include `.next` or `node_modules`.
-- It keeps the Innobiz logo and brand-color direction from v1.6.
-- It removes the emergency inline CSS approach from v1.6.1 and returns to standard Next.js CSS handling.
+Then redeploy/clear cache in Hostinger.
