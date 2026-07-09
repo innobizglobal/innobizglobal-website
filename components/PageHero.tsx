@@ -9,8 +9,7 @@ type PageHeroProps = {
 export function PageHero({ eyebrow, title, text, ctaLabel = 'Start a conversation', ctaHref = '/contact' }: PageHeroProps) {
   return (
     <section className="inner-hero section-pad">
-      <div className="inner-hero-bg" aria-hidden="true" />
-      <div className="inner-hero-content reveal">
+      <div className="inner-hero-content">
         <p className="kicker">{eyebrow}</p>
         <h1>{title}</h1>
         <p>{text}</p>

@@ -1,36 +1,30 @@
 export function Footer() {
   return (
-    <footer className="footer">
-      <div>
-        <a className="brand v16-footer-brand" href="/" aria-label="Innobiz Global Ventures home">
-          <img
-            className="v16-footer-logo"
-            src="/images/innobiz-logo-nav.png"
-            alt="Innobiz Global Ventures"
-          />
-        </a>
-        <p>Digital transformation, product engineering, AI automation, portal operations, CRM workflows, and analytics-led growth for ambitious businesses.</p>
-      </div>
-      <div className="footer-columns">
+    <footer className="site-footer">
+      <div className="footer-grid">
         <div>
-          <h4>Company</h4>
+          <img src="/images/innobiz-logo-footer.png" width="260" height="150" alt="Innobiz Global Ventures" />
+          <p>AI, digital, automation, portals, CRM, and growth systems for ambitious businesses.</p>
+        </div>
+        <div>
+          <h3>Company</h3>
           <a href="/about">About</a>
-          <a href="/about/how-we-work">How We Work</a>
-          <a href="/about/why-innobiz">Why Innobiz</a>
-        </div>
-        <div>
-          <h4>Services</h4>
-          <a href="/services">Services</a>
-          <a href="/industries">Industries</a>
           <a href="/portfolio">Portfolio</a>
+          <a href="/resources">Resources</a>
         </div>
         <div>
-          <h4>Connect</h4>
-          <a href="/contact">Contact</a>
-          <a href="/resources">Resources</a>
+          <h3>Services</h3>
+          <a href="/services">Digital Transformation</a>
+          <a href="/innobizai">AI Automation</a>
+          <a href="/explore-innobiz-digital">Explore Innobiz Digital</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
           <a href="mailto:hello@innobizglobal.com">hello@innobizglobal.com</a>
+          <a href="/contact">Start a project</a>
         </div>
       </div>
+      <div className="footer-bottom">© {new Date().getFullYear()} Innobiz Global Ventures. All rights reserved.</div>
     </footer>
   );
 }
