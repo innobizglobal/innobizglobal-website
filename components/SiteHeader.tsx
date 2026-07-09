@@ -8,7 +8,7 @@ export function SiteHeader() {
 
   return (
     <header
-      className="site-header premium-header v14-header v16-header v19-header"
+      className="site-header premium-header v20-header"
       style={{
         position: 'sticky',
         top: 0,
@@ -17,31 +17,31 @@ export function SiteHeader() {
         alignItems: 'center',
         justifyContent: 'space-between',
         gap: 24,
-        minHeight: 96,
-        padding: '10px max(28px, 5.2vw)',
-        background: 'rgba(255,255,255,0.96)',
+        minHeight: 92,
+        padding: '10px max(24px, 5vw)',
+        background: 'rgba(6, 11, 20, .94)',
         backdropFilter: 'blur(18px)',
-        borderBottom: '1px solid rgba(13,42,99,0.10)',
-        boxShadow: '0 18px 50px rgba(7, 22, 52, 0.06)',
+        borderBottom: '1px solid rgba(255,255,255,.10)',
+        boxShadow: '0 18px 60px rgba(0,0,0,.35)',
       }}
     >
       <a
-        className="brand premium-brand v14-brand v16-brand"
+        className="brand premium-brand v20-brand"
         href="/"
         aria-label="Innobiz Global Ventures home"
         style={{ display: 'inline-flex', alignItems: 'center', flex: '0 0 auto', textDecoration: 'none' }}
       >
         <img
-          className="v16-nav-logo v19-nav-logo"
-          src="/images/innobiz-global-ventures-logo.png"
+          className="v20-nav-logo"
+          src="/images/innobiz-logo-nav.png"
           alt="Innobiz Global Ventures"
-          width="188"
-          height="82"
+          width="190"
+          height="64"
           style={{
-            width: 178,
-            maxWidth: 178,
-            height: 76,
-            maxHeight: 76,
+            width: 190,
+            maxWidth: 190,
+            height: 64,
+            maxHeight: 64,
             objectFit: 'contain',
             display: 'block',
           }}
@@ -49,7 +49,7 @@ export function SiteHeader() {
       </a>
 
       <nav
-        className="desktop-nav premium-nav v14-nav v19-nav"
+        className="desktop-nav premium-nav v20-nav"
         aria-label="Main navigation"
         style={{
           display: 'flex',
@@ -62,20 +62,20 @@ export function SiteHeader() {
       >
         {menuGroups.map((group) => (
           <div
-            className="nav-item v19-nav-item"
+            className="nav-item v20-nav-item"
             key={group.label}
             onMouseEnter={() => setOpenMenu(group.label)}
             onMouseLeave={() => setOpenMenu(null)}
             style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}
           >
             <a
-              className="nav-link v19-nav-link"
+              className="nav-link v20-nav-link"
               href={group.href}
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: 7,
-                color: '#101b34',
+                color: openMenu === group.label ? '#1E63FF' : 'rgba(255,255,255,.88)',
                 fontSize: 16,
                 fontWeight: 800,
                 lineHeight: 1,
@@ -97,7 +97,7 @@ export function SiteHeader() {
                   lineHeight: 1,
                   transform: openMenu === group.label ? 'rotate(180deg)' : 'rotate(0deg)',
                   transition: 'transform .2s ease',
-                  color: '#132348',
+                  color: openMenu === group.label ? '#FF8A00' : '#B8C2D6',
                 }}
               >
                 ▾
@@ -114,32 +114,47 @@ export function SiteHeader() {
                 gap: 26,
                 position: 'absolute',
                 left: '50%',
-                top: 34,
+                top: 36,
                 transform: 'translateX(-50%)',
-                width: 760,
+                width: 780,
                 maxWidth: 'calc(100vw - 72px)',
                 padding: 24,
                 borderRadius: 26,
-                background: 'rgba(255,255,255,0.98)',
-                border: '1px solid rgba(13,42,99,0.12)',
-                boxShadow: '0 30px 90px rgba(10, 31, 73, 0.16)',
+                background: 'rgba(9,18,39,.98)',
+                border: '1px solid rgba(255,255,255,.13)',
+                boxShadow: '0 30px 90px rgba(0,0,0,.50)',
+                color: '#fff',
               }}
             >
-              <div className="mega-intro" style={{ padding: 18, borderRadius: 20, background: 'linear-gradient(135deg, rgba(10,86,241,.08), rgba(255,122,0,.08))' }}>
-                <span style={{ color: '#0a56f1', fontWeight: 900, fontSize: 12, letterSpacing: '.16em', textTransform: 'uppercase' }}>{group.label}</span>
-                <strong style={{ display: 'block', marginTop: 10, color: '#071634', fontSize: 22, lineHeight: 1.1 }}>Explore Innobiz {group.label.toLowerCase()}</strong>
-                <p style={{ margin: '12px 0 0', color: '#526074', lineHeight: 1.55 }}>{group.intro}</p>
+              <div
+                className="mega-intro"
+                style={{
+                  padding: 18,
+                  borderRadius: 20,
+                  background: 'linear-gradient(135deg, rgba(30,99,255,.14), rgba(255,138,0,.10))',
+                  border: '1px solid rgba(255,255,255,.08)',
+                }}
+              >
+                <span style={{ color: '#FF8A00', fontWeight: 900, fontSize: 12, letterSpacing: '.16em', textTransform: 'uppercase' }}>
+                  {group.label}
+                </span>
+                <strong style={{ display: 'block', marginTop: 10, color: '#fff', fontSize: 22, lineHeight: 1.1 }}>
+                  Explore Innobiz {group.label.toLowerCase()}
+                </strong>
+                <p style={{ margin: '12px 0 0', color: '#B8C2D6', lineHeight: 1.55 }}>{group.intro}</p>
               </div>
               <div className="mega-columns" style={{ display: 'grid', gridTemplateColumns: 'repeat(2,minmax(0,1fr))', gap: 18 }}>
                 {group.columns.map((column) => (
                   <div className="mega-column" key={column.title}>
-                    <h4 style={{ margin: '0 0 12px', color: '#071634', fontSize: 14, textTransform: 'uppercase', letterSpacing: '.12em' }}>{column.title}</h4>
+                    <h4 style={{ margin: '0 0 12px', color: '#B8C2D6', fontSize: 14, textTransform: 'uppercase', letterSpacing: '.12em' }}>
+                      {column.title}
+                    </h4>
                     <div style={{ display: 'grid', gap: 8 }}>
                       {column.links.map(([label, href]) => (
                         <a
                           href={href}
                           key={`${group.label}-${label}`}
-                          style={{ color: '#263a62', textDecoration: 'none', fontWeight: 700, padding: '8px 0' }}
+                          style={{ color: 'rgba(255,255,255,.88)', textDecoration: 'none', fontWeight: 760, padding: '8px 0' }}
                         >
                           {label}
                         </a>
@@ -152,10 +167,10 @@ export function SiteHeader() {
           </div>
         ))}
         <a
-          className="nav-link no-chevron explore-link v19-explore-link"
+          className="nav-link no-chevron explore-link v20-explore-link"
           href="/explore-innobiz-digital"
           style={{
-            color: '#5d6678',
+            color: '#B8C2D6',
             fontSize: 16,
             fontWeight: 800,
             whiteSpace: 'nowrap',
@@ -167,22 +182,22 @@ export function SiteHeader() {
       </nav>
 
       <a
-        className="header-cta premium-cta v14-header-cta v19-header-cta"
+        className="header-cta premium-cta v20-header-cta"
         href="/contact"
         style={{
           display: 'inline-flex',
           alignItems: 'center',
           justifyContent: 'center',
           gap: 8,
-          minHeight: 54,
+          minHeight: 52,
           padding: '0 24px',
           borderRadius: 999,
           color: '#fff',
           fontWeight: 900,
           textDecoration: 'none',
           whiteSpace: 'nowrap',
-          background: 'linear-gradient(135deg,#0a56f1 0%,#116cff 55%,#ff7a00 140%)',
-          boxShadow: '0 18px 42px rgba(10,86,241,.22)',
+          background: 'linear-gradient(135deg,#0B2F8A 0%,#1E63FF 100%)',
+          boxShadow: '0 18px 42px rgba(30,99,255,.28)',
         }}
       >
         Contact Us
