@@ -1,30 +1,32 @@
-export function Footer() {
+import Link from 'next/link';
+
+export default function Footer() {
   return (
-    <footer className="site-footer">
-      <div className="footer-grid">
+    <footer className="footer">
+      <div className="container footer-grid">
         <div>
-          <img src="/images/innobiz-logo-footer.png" width="260" height="150" alt="Innobiz Global Ventures" />
-          <p>AI, digital, automation, portals, CRM, and growth systems for ambitious businesses.</p>
+          <img src="/images/innobiz-logo-nav.png" alt="Innobiz Global Ventures" className="footer-logo" width="387" height="68" />
+          <p>Business-first digital strategy, product engineering, AI automation, and operating systems for growth-focused companies.</p>
         </div>
         <div>
-          <h3>Company</h3>
-          <a href="/about">About</a>
-          <a href="/portfolio">Portfolio</a>
-          <a href="/resources">Resources</a>
+          <h4>Services</h4>
+          <Link href="/services/product-engineering">Product Engineering</Link>
+          <Link href="/services/web-app-development">Web & App Development</Link>
+          <Link href="/services/growth-analytics">Growth & Analytics</Link>
         </div>
         <div>
-          <h3>Services</h3>
-          <a href="/services">Digital Transformation</a>
-          <a href="/innobizai">AI Automation</a>
-          <a href="/explore-innobiz-digital">Explore Innobiz Digital</a>
+          <h4>InnobizAI</h4>
+          <Link href="/innobizai/ai-business-assistants">AI Business Assistants</Link>
+          <Link href="/innobizai/workflow-automation">Workflow Automation</Link>
+          <Link href="/innobizai/ai-outreach-systems">AI Outreach Systems</Link>
         </div>
         <div>
-          <h3>Contact</h3>
-          <a href="mailto:hello@innobizglobal.com">hello@innobizglobal.com</a>
-          <a href="/contact">Start a project</a>
+          <h4>Contact</h4>
+          <p>Ready to build a practical digital growth engine?</p>
+          <Link href="/contact" className="footer-cta">Start a discussion</Link>
         </div>
       </div>
-      <div className="footer-bottom">© {new Date().getFullYear()} Innobiz Global Ventures. All rights reserved.</div>
+      <div className="footer-bottom">© 2026 Innobiz Global Ventures. All rights reserved.</div>
     </footer>
   );
 }

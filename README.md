@@ -1,25 +1,23 @@
-# Innobiz Global Ventures Website v2.1
+# Innobiz Global Website v2.2
 
-White brand system update with:
+Light brand theme with the new Innobiz Global Ventures logo and four generated banner images.
 
-- New Innobiz Global Ventures logo resized safely for header use
-- Four uploaded banner images used as the rotating homepage hero backgrounds
-- Clean white / blue / orange brand palette
-- Header and menu rebuilt with properly aligned dropdown chevrons
-- Mega menu text removed from default HTML flow, so it will not appear as plain links if CSS is delayed
-- Critical CSS embedded in `app/layout.tsx` and also in `app/globals.css`
-- Build verified with `npm run build`
-
-## Deploy
-
-Copy files into the project root, then run:
+## Commands
 
 ```bash
 npm install
 npm run build
-git add .
-git commit -m "Innobiz v2.1 white brand system with banners"
-git push
+npm run start
 ```
 
-Then redeploy on Hostinger and clear cache.
+## Deployment
+
+Use Hostinger Web Apps / Next.js settings:
+
+- Framework: Next.js
+- Branch: main
+- Root directory: ./
+- Install command: npm install
+- Build command: npm run build
+- Start command: npm run start
+- Node version: 22.x or 20.x
